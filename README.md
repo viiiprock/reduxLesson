@@ -99,7 +99,7 @@ const todos = (state = initialState, action) => {
 };
 
 ```
-Tuỳ thuộc vào app của bạn có nhiều 
+Tuỳ thuộc vào app của bạn có nhiều hay 
 
 **Ba nguyên tắc Redux**
 
