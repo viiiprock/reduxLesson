@@ -99,9 +99,14 @@ const todos = (state = initialState, action) => {
 };
 
 ```
-Tuỳ thuộc vào app của bạn có nhiều hay 
+Bạn có thể viết thêm reducer khác để quản lý các reducer.
 
 **Ba nguyên tắc Redux**
+
+1.	Single source of truth 
+
+
+
 
 **Quy trình Redux** 
 
