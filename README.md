@@ -105,8 +105,7 @@ Bạn có thể viết thêm reducer khác để quản lý các reducer.
 
 1.	Single source of truth 
 
-
-
+2. 
 
 **Quy trình Redux** 
 
