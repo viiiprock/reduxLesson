@@ -5,8 +5,6 @@
 Nếu bạn sử dụng trên máy thì có thể sử dụng create-react-app hoặc bất kỳ react boilerplate nào bạn thích (tốt nhất là sử dụng webpack).
 Bạn có thể kiểm tra dependencies đã có hay chưa.
 
-Với bài viết này, tôi sử dụng [JS Bin](http://jsbin.com/) nên có hơi khác một chút so với 
-
 * redux
 * react-redux
 
@@ -78,7 +76,7 @@ Trong `todos` ta lại có 2 nội dung `todos.text` và `todos.completed`, đâ
 ```
 Lưu ý là `type` là tên gọi của action bắt buộc theo quy định của Redux, còn `text` hay `filter` được gọi chung là `payload`, bạn đặt nó là gì thì tuỳ vào cái mình đang làm. 
 
-3. Để kết nối state với action thì cần có reducer
+3. Để kết nối state với action thì cần có reducer, vai trò của reducer là lưu 
 
 ```
 let initialState = []; // tạo một state mặc định
@@ -105,10 +103,39 @@ Bạn có thể viết thêm reducer khác để quản lý các reducer.
 
 1.	Single source of truth 
 
-2. 
+Toàn bộ state của ứng dụng được lưu trữ trong một cây object tại một store duy nhất. Lý thuyết này nhằm giúp giới hạn sự trùng lặp dữ liệu và liên kết dữ liệu giữa các đối tượng khác nhau. 
+
+2. State is read-only 
+
+Cách duy nhất để thay đổi state là đưa ra một action -- một object mô tả hoạt động
+
+3. Sự thay đổi được tạo bởi pure function
+
+Pure function là function chỉ return giá trị được tạo bởi chính tham số của function. ví dụ 
+```
+function square(x) {
+	return x * x;
+}
+
+function squareAll(items) {
+	return items.map(square);
+}
+
+```
 
 **Quy trình Redux** 
 
+Các khái niệm sơ bộ thì chúng ta nắm rồi, nhưng tôi tóm lại quy trình ở đây.
+
+Step 1. User dispatch một action (là một object).
+Step 2. Các action đó được reducer nhận diện các action để chuyển đổi state. Store là nơi chứa các state.  
+Step 3. State mới được nhận diện và hiển thị trên giao diện. 
+
+## Bài tập 
+
+Với bài tập, tôi sử dụng [JS Bin](http://jsbin.com/) nên có hơi khác một chút so với 
+
+* [Phần 1: Bắt đầu từ Mock Up](/p1.md)
 
 
 
