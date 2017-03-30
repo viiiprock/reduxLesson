@@ -47,9 +47,11 @@ Cá nhân tôi nhìn nhận một chương trình JavaScript về mặt cơ bả
 ```
 {
 	todos: [{
+		id: 0,
 		text: 'Ăn cơm',
 		completed: true
 	}, {
+		id: 1,
 		text: 'Uống nước',
 		complete: false
 	}],
@@ -64,7 +66,7 @@ Trong `todos` ta lại có 2 nội dung `todos.text` và `todos.completed`, đâ
 
 ```
 {
-	type: 'ADD_TODO', 
+	type: 'ADD_TODO',
 	text: 'Ăn cơm'	
 }
 ```
@@ -78,6 +80,26 @@ Lưu ý là `type` là tên gọi của action bắt buộc theo quy định c�
 
 3. Để kết nối state với action thì cần có reducer
 
+```
+let initialState = []; // tạo một state mặc định
+const todos = (state = initialState, action) => {
+	switch (action.type) {
+		case 'ADD_TODO': 
+			return [
+				...state,
+				{
+					id: action.id,
+					text: action.text,
+					completed: false 
+				}
+			];
+		default: 
+			return state;
+	}
+};
+
+```
+Tuỳ thuộc vào app của bạn có nhiều 
 
 **Ba nguyên tắc Redux**
 
