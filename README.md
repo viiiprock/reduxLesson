@@ -136,6 +136,6 @@ Step 3. State mới được nhận diện và hiển thị trên giao diện.
 Với bài tập, tôi sử dụng [JS Bin](http://jsbin.com/) nên có hơi khác một chút so với 
 
 * [Phần 1: Bắt đầu từ Mock Up](/p1.md)
-
+* [Phần 2: Tạo task Todo](/p2.md)
 
 
