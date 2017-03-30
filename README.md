@@ -5,6 +5,8 @@
 Nếu bạn sử dụng trên máy thì có thể sử dụng create-react-app hoặc bất kỳ react boilerplate nào bạn thích (tốt nhất là sử dụng webpack).
 Bạn có thể kiểm tra dependencies đã có hay chưa.
 
+* react
+* react-dom
 * redux
 * react-redux
 
@@ -136,6 +138,6 @@ Step 3. State mới được nhận diện và hiển thị trên giao diện.
 Với bài tập, tôi sử dụng [JS Bin](http://jsbin.com/) nên có hơi khác một chút so với 
 
 * [Phần 1: Bắt đầu từ Mock Up](/p1.md)
-* [Phần 2: Tạo task Todo](/p2.md)
-
-
+* [Phần 2: Tạo Reducer](/p2.md)
+* [Phần 3: Kết hợp các reducer lại với nhau](/p3.md)
+* [Phần 4: Kết hợp với React component](/p4.md)
