@@ -44,7 +44,7 @@ Cá nhân tôi nhìn nhận một chương trình JavaScript về mặt cơ bả
 
 1. Redux quan niệm các state chỉ đơn thuần là một plain object, ví dụ app Todo nó là một object sau:
 
-```
+```js
 {
 	todos: [{
 		id: 0,
@@ -64,13 +64,13 @@ Trong `todos` ta lại có 2 nội dung `todos.text` và `todos.completed`, đâ
 
 2. Để thay đổi các state `todos.text` và `todos.completed` đó, bạn phải dispatch actions,*action* này cũng là plain object luôn:
 
-```
+```js
 {
 	type: 'ADD_TODO',
 	text: 'Ăn cơm'	
 }
 ```
-```
+```js
 {
 	type: 'SET_VISIBILITY_FILTER',
 	filter: 'SHOW_COMPLED' 
@@ -80,7 +80,7 @@ Lưu ý là `type` là tên gọi của action bắt buộc theo quy định c�
 
 3. Để kết nối state với action thì cần có reducer, vai trò của reducer là lưu 
 
-```
+```js
 let initialState = []; // tạo một state mặc định
 const todos = (state = initialState, action) => {
 	switch (action.type) {
@@ -114,7 +114,7 @@ Cách duy nhất để thay đổi state là đưa ra một action -- một obje
 3. Sự thay đổi được tạo bởi pure function
 
 Pure function là function chỉ return giá trị được tạo bởi chính tham số của function. ví dụ 
-```
+```js
 function square(x) {
 	return x * x;
 }
