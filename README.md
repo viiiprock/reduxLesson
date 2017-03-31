@@ -129,9 +129,9 @@ function squareAll(items) {
 
 Các khái niệm sơ bộ thì chúng ta nắm rồi, nhưng tôi tóm lại quy trình ở đây.
 
-Step 1. User dispatch một action (là một object).
-Step 2. Các action đó được reducer nhận diện các action để chuyển đổi state. Store là nơi chứa các state.  
-Step 3. State mới được nhận diện và hiển thị trên giao diện. 
+Step 1. User tạo một action (là một object).
+Step 2. Các action đó được reducer nhận diện và so sánh với action mẫu. Action và reducer được lưu trữ trong store.  
+Step 3. Sau khi reducer nhận diện, nó sẽ dispatch action đó từ store để hiển thị trên giao diện. 
 
 ## Bài tập 
 
