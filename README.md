@@ -12,7 +12,7 @@ Bạn có thể kiểm tra dependencies đã có hay chưa.
 
 ## Chuẩn bị kiến thức
 
-Đương nhiên là bạn cần biết qua React và JavaScript
+Đương nhiên là bạn cần biết qua React và JavaScript (ES6)
 
 ## Giới thiệu 
 
@@ -154,3 +154,4 @@ Với bài tập, tôi sử dụng [JS Bin](http://jsbin.com/) nên có hơi kh�
 * [Phần 2: Tạo Reducer](/p2.md)
 * [Phần 3: Kết hợp các reducer lại với nhau](/p3.md)
 * [Phần 4: Kết hợp với React component](/p4.md)
+* [Phần 5: Tách component TodoForm, TodoList](/p5.md)
