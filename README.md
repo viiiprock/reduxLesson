@@ -32,8 +32,21 @@ Ok, cái này đầy rẫy trên mạng, tôi chỉ note ngắn gọn vài đi�
 **TL,DR** 
 
 Nhắc lại một chút, bạn đã làm quen với phương thức quản lý props, state của React với chu trình LifeCycle của nó như 
-*Mounting state* bằng `constructor()`, `componentWillMount()`, `render()`,`componentDidMount()`, 
-*Update state* bằng `componentWillReceiveProps()`, `shouldComponentUpdate()`,`componentWillUpdate()`, `render()`, `componentDidUpdate()`
+*Mounting state* bằng 
+
+- `constructor()` 
+- `componentWillMount()` 
+- `render()` 
+-`componentDidMount()`
+
+*Update state* bằng 
+
+- `componentWillReceiveProps()`
+- `shouldComponentUpdate()`
+- `componentWillUpdate()`
+- `render()`
+- `componentDidUpdate()`
+
 Destroy bằng cách *unmount* `componentWillUnmount()`
 
 Tại sao lại nhiều quy trình vậy?! thực sự tôi chưa có điều kiện để dùng hết một đống chu trình như ở trên, tuy nhiên với cách quản lý như vậy thì khi viết một ứng dụng nó có nhiều thao tác giống nhau, hoặc hơi giống nhau, bạn sẽ nhận ra rằng mình đang gặp rắc rối về quản lý state như thế nào. Vì vậy, không phải lúc nào cũng dùng React hoặc nhất thiết phải dùng Redux để quản lý state, cái đó phụ thuộc vào cái bạn đang làm, nhưng tốt nhất nên biết cả hai (một số bạn có thể tìm hiểu và sử dụng MobX thay cho Redux, ok, đường nào cũng tới Paris).
