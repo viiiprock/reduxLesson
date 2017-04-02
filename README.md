@@ -146,7 +146,7 @@ Step 1. User tạo một action (là một object).
 Step 2. Các action đó được reducer nhận diện và so sánh với action mẫu. Action và reducer được lưu trữ trong store.  
 Step 3. Sau khi reducer nhận diện, nó sẽ dispatch action đó từ store để hiển thị trên giao diện. 
 
-## Bài tập 
+## Bài tập - Xử lý đồng bộ (synchronous)
 
 Với bài tập, tôi sử dụng [JS Bin](http://jsbin.com/) nên có hơi khác một chút so với 
 
