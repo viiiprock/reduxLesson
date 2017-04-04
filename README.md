@@ -16,7 +16,7 @@ Bạn có thể kiểm tra dependencies đã có hay chưa.
 
 ## Giới thiệu 
 
-Tôi viết bài này vì tôi là một tay ngang về lập trình, viết bài giúp tôi học tốt hơn nên đây chưa hẳn là lòng tốt mà viết bài cho các bạn đọc, tự sướng là chính.
+Tôi viết bài này vì tôi là một tay ngang về lập trình, do đó kiến thức không đủ nhiều nhưng có thể nhờ vậy sẽ viết dễ hiểu hơn so với những bạn chuyên nghiệp, hy vọng bằng cách tôi hiểu có thể giúp các bạn hiểu rõ redux dễ dàng.
 
 Người ta luôn nói Redux cực kỳ dễ nhưng thực tế thì tôi đã học rất nhiều phen rồi mà nó cứ loạn hết cả lên, làm sao có thể nuốt nổi mấy cái khái niệm lạ lùng của Redux. Do đó, tôi cố gắng viết bài này một cách chậm rãi, tường tận nhất, diễn giải một cách dễ hiểu nhất cho ai mới bắt đầu học Redux. Có thể nói huỵch toẹt là Redux for dummies 
 
