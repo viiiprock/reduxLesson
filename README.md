@@ -29,7 +29,7 @@ Bài này tôi sử dụng hướng dẫn kinh điển của Redux là thực hi
 
 Ok, cái này đầy rẫy trên mạng, tôi chỉ note ngắn gọn vài điểm chính. Tài liệu đầy đủ nhất vẫn là tại [Redux docs](http://redux.js.org/)
 
-**TL,DR** 
+**TL;DR** 
 
 Nhắc lại một chút, bạn đã làm quen với phương thức quản lý props, state của React với chu trình LifeCycle của nó như 
 *Mounting state* bằng 
@@ -37,7 +37,7 @@ Nhắc lại một chút, bạn đã làm quen với phương thức quản lý 
 - `constructor()` 
 - `componentWillMount()` 
 - `render()` 
--`componentDidMount()`
+- `componentDidMount()`
 
 *Update state* bằng 
 
@@ -53,7 +53,7 @@ Tại sao lại nhiều quy trình vậy?! thực sự tôi chưa có điều ki
 
 **Khái niệm Redux** 
 
-Cá nhân tôi nhìn nhận một chương trình JavaScript về mặt cơ bản là tập hợp các object và nó biến đổi liên tục trong quá trình chạy chương trình thông qua các phương thức hay function mà bản thân phương thức hay function cũng là object. Vì vậy, theo như tôi hiểu thì các nhà thiết kế của facebook đã nhìn nhận dưới một góc nhìn cơ bản nhất của chương trình để tạo ra Redux. 
+Một chương trình (ở đây cụ thể là JavaScript) về mặt cơ bản là tập hợp các object và nó biến đổi liên tục trong quá trình chạy chương trình thông qua các phương thức hay function mà bản thân phương thức hay function cũng là object. Vì vậy, theo như tôi hiểu thì các nhà thiết kế của facebook thiết kế Redux với một góc độ cơ bản nhất. 
 
 1. Redux quan niệm các state chỉ đơn thuần là một plain object, ví dụ app Todo nó là một object sau:
 
@@ -112,7 +112,7 @@ const todos = (state = initialState, action) => {
 };
 
 ```
-Bạn có thể viết thêm reducer khác để quản lý các reducer.
+*Bạn có thể viết thêm reducer khác để quản lý các reducer.*
 
 **Ba nguyên tắc Redux**
 
@@ -143,8 +143,8 @@ function squareAll(items) {
 Các khái niệm sơ bộ thì chúng ta nắm rồi, nhưng tôi tóm lại quy trình ở đây.
 
 Step 1. User tạo một action (là một object).
-Step 2. Các action đó được reducer nhận diện và so sánh với action mẫu. Action và reducer được lưu trữ trong store.  
-Step 3. Sau khi reducer nhận diện, nó sẽ dispatch action đó từ store để hiển thị trên giao diện. 
+Step 2. Các action đó được so sánh với mẫu là reducer. Reducer tạm gọi là chuẩn mẫu mực, action là hành động của user đã được mô tả trước bằng reducer và action sẽ được nhận vào trong store.  
+Step 3. Sau khi reducer nhận diện, nó sẽ dispatch action bằng phương thức `dispatch()`. Các component nhận biết các action dispatch đó bằng phương thức `getState()` & `subscribe()` và hiển thị chúng trên giao diện, hai phương thức này được thay thế bằng `connect()` và `Provider` của một plugin tên là react-redux nhằm tối ưu hoá code của bạn.
 
 ## Bài tập - Xử lý đồng bộ (synchronous)
 
@@ -155,3 +155,4 @@ Với bài tập, tôi sử dụng [JS Bin](http://jsbin.com/) nên có hơi kh�
 * [Phần 3: Kết hợp các reducer lại với nhau](/p3.md)
 * [Phần 4: Kết hợp với React component](/p4.md)
 * [Phần 5: Tách các Component](/p5.md)
+* [Phần 6: Tái cấu trúc sử dụng react-redux plugin](/p6.md)
