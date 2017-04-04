@@ -156,3 +156,5 @@ Với bài tập, tôi sử dụng [JS Bin](http://jsbin.com/) nên có hơi kh�
 * [Phần 4: Kết hợp với React component](/p4.md)
 * [Phần 5: Tách các Component](/p5.md)
 * [Phần 6: Tái cấu trúc sử dụng react-redux plugin](/p6.md)
+
+## Bài tập - Xử lý bất đồng bộ (asynchronous)
