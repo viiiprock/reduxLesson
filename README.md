@@ -140,11 +140,13 @@ function squareAll(items) {
 
 **Quy trình Redux** 
 
-Các khái niệm sơ bộ thì chúng ta nắm rồi, nhưng tôi tóm lại quy trình ở đây.
+Các khái niệm sơ bộ thì chúng ta nắm rồi, nhưng tôi tóm lại quy trình ngắn gọn ở đây. 
 
 Step 1. User tạo một action (là một object).
-Step 2. Các action đó được so sánh với mẫu là reducer. Reducer tạm gọi là chuẩn mẫu mực, action là hành động của user đã được mô tả trước bằng reducer và action sẽ được nhận vào trong store.  
-Step 3. Sau khi reducer nhận diện, nó sẽ dispatch action bằng phương thức `dispatch()`. Các component nhận biết các action dispatch đó bằng phương thức `getState()` & `subscribe()` và hiển thị chúng trên giao diện, hai phương thức này được thay thế bằng `connect()` và `Provider` của một plugin tên là react-redux nhằm tối ưu hoá code của bạn.
+
+Step 2. Reducer bên trong store nó chứa state khởi tạo, lắng nghe action và cập nhật state mới. 
+
+Step 3. Sau khi reducer nhận diện và cập nhật state mới từ action, nó sẽ dispatch action bằng phương thức `dispatch()`. Các component nhận biết các action dispatch đó bằng phương thức `getState()` & `subscribe()` và hiển thị chúng trên giao diện, hai phương thức này được thay thế bằng `connect()` và `Provider` của một plugin tên là react-redux nhằm tối ưu hoá code của bạn.
 
 ## Bài tập - Xử lý đồng bộ (synchronous)
 
