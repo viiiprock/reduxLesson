@@ -150,7 +150,7 @@ Step 3. Sau khi reducer nhận diện và cập nhật state mới từ action, 
 
 ## Bài tập - Xử lý đồng bộ (synchronous)
 
-Với bài tập, tôi sử dụng [JS Bin](http://jsbin.com/) nên có hơi khác một chút so với 
+Với bài tập, tôi sử dụng [JS Bin](http://jsbin.com/) nên có hơi khác một chút so với thực hiện trên local host
 
 * [Phần 1: Bắt đầu từ Mock Up](/p1.md)
 * [Phần 2: Tạo Reducer](/p2.md)
@@ -160,3 +160,5 @@ Với bài tập, tôi sử dụng [JS Bin](http://jsbin.com/) nên có hơi kh�
 * [Phần 6: Tái cấu trúc sử dụng react-redux plugin](/p6.md)
 
 ## Bài tập - Xử lý bất đồng bộ (asynchronous)
+
+Cơ bản Redux xử lý đồng bộ, để xử lý bất đồng bộ, bạn cần có thêm thư viện như redux-thunk, hoặc redux-saga, hoặc redux-observable...
