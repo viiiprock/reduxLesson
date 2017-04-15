@@ -53,7 +53,7 @@ Tại sao lại nhiều quy trình vậy?! thực sự tôi chưa có điều ki
 
 **Khái niệm Redux** 
 
-Một chương trình (ở đây cụ thể là JavaScript) về mặt cơ bản là tập hợp các object và nó biến đổi liên tục trong quá trình chạy chương trình thông qua các phương thức hay function mà bản thân phương thức hay function cũng là object. Vì vậy, theo như tôi hiểu thì các nhà thiết kế của facebook thiết kế Redux với một góc độ cơ bản nhất. 
+Một chương trình JavaScript về mặt cơ bản là tập hợp các object và nó biến đổi liên tục trong quá trình chạy chương trình thông qua các phương thức hay function mà bản thân phương thức hay function cũng là object. Vì vậy, theo như tôi hiểu thì các nhà thiết kế của facebook thiết kế Redux với một góc độ cơ bản nhất. 
 
 1. Redux quan niệm các state chỉ đơn thuần là một plain object, ví dụ app Todo nó là một object sau:
 
