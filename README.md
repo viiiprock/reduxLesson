@@ -148,7 +148,7 @@ Step 2. Reducer bên trong store nó chứa state khởi tạo, lắng nghe acti
 
 Step 3. Sau khi reducer nhận diện và cập nhật state mới từ action, nó sẽ dispatch action bằng phương thức `dispatch()`. Các component nhận biết các action dispatch đó bằng phương thức `getState()` & `subscribe()` và hiển thị chúng trên giao diện, hai phương thức này được thay thế bằng `connect()` và `Provider` của một plugin tên là react-redux nhằm tối ưu hoá code của bạn.
 
-## Bài tập - Xử lý đồng bộ (synchronous)
+## Cơ bản redux - Xử lý đồng bộ (synchronous)
 
 Với bài tập, tôi sử dụng [JS Bin](http://jsbin.com/) nên có hơi khác một chút so với thực hiện trên local host
 
@@ -159,6 +159,6 @@ Với bài tập, tôi sử dụng [JS Bin](http://jsbin.com/) nên có hơi kh�
 * [Phần 5: Tách các Component](/p5.md)
 * [Phần 6: Tái cấu trúc sử dụng react-redux plugin](/p6.md)
 
-## Bài tập - Xử lý bất đồng bộ (asynchronous)
+## Xử lý bất đồng bộ (asynchronous)
 
 Cơ bản Redux xử lý đồng bộ, để xử lý bất đồng bộ, bạn cần có thêm thư viện như redux-thunk, hoặc redux-saga, hoặc redux-observable...
